@@ -1,19 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Anime Scout</title>
-</head>
-<body>
-    <h1>Anime Scout</h1>
-    <div>
-        <form>
-            <input>
-            <button>BANKAI</button>
-        </form>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <h1 class="title">Anime Scout</h1>
+    <div class="main-container">
+      <form type="submit">
+        <input
+          name="Search"
+          id="searchBar"
+          type="text"
+          size="40"
+          autofocus="true"
+          class="form-input"
+          placeholder="Search for an Anime!"
+        />
+        <button type="submit" class="btn" id="searchBtn">BANKAI</button>
+      </form>
+      <div id="cardDisplayArea"></div>
+      <div class="flex-container">
+        <iframe
+          id="vidIframe"
+          width="560"
+          height="315"
+          frameborder="0"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <footer>Copyright</footer>
     </div>
-    
-</body>
+    <script src="assets/js/script.js"></script>
+  </body>
 </html>
