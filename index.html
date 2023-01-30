@@ -8,8 +8,12 @@
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
-    <h1 class="title">Anime Scout</h1>
+      <header class="header">
+        <h1 class="title">Anime Scout</h1>
+      </header>
+   <!-- Main search container-->
     <div class="main-container">
+        <div class="search-container">
       <form type="submit">
         <input
           name="Search"
@@ -22,7 +26,13 @@
         />
         <button type="submit" class="btn" id="searchBtn">BANKAI</button>
       </form>
+      <div id="layout" class="">
+
+      </div>
+    </div>
+      <!-- This will display the cards for the anime titles -->
       <div id="cardDisplayArea"></div>
+      <!-- Container to hold Youtube videos of anime-->
       <div class="flex-container">
         <iframe
           id="vidIframe"
@@ -32,8 +42,8 @@
           allowfullscreen
         ></iframe>
       </div>
-      <footer>Copyright</footer>
     </div>
+    <footer>Copyright</footer>
     <script src="assets/js/script.js"></script>
   </body>
 </html>
