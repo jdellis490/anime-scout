@@ -45,6 +45,11 @@ body {
     justify-content: center;
 }
 
+.flex-container {
+    display: flex;
+    justify-content: center;
+}
+
 .btn {
     color: var(--text-color);
     background-color: var(--light);

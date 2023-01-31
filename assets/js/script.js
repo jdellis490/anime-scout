@@ -1,5 +1,7 @@
 const searchForm = document.querySelector('#searchBar');
 const buttonEl = document.querySelector('#searchBtn');
+const tokenK = 'AIzaSyBOmO9O2FstPY2qYc1OT5fBE7h0GK1yz4Q';
+let vidIdTag;
 
 searchSubmission = (e) => {
     e.preventDefault();
@@ -10,6 +12,34 @@ searchSubmission = (e) => {
         alert('Please enter Anime title!');
         return;
     }
+    onSearch(inputSearchEl);
+}
+
+// fetch('https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=10&q=anime%20trailer&key=AIzaSyBOmO9O2FstPY2qYc1OT5fBE7h0GK1yz4Q')
+// .then((data) => {
+//     console.log(data.json())
+// });
+let embed = (vidIdTag) => {
+    const embedLink = 'https://www.youtube.com/embed/' + vidIdTag;
+    document.getElementById('vidIframe').src = embedLink;
+}
+
+onSearch = (searchValue) => {
+    const requestURL = 'https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=1&q=' + searchValue + '%20anime%20trailer&key=' + tokenK;
+    fetch(requestURL)
+        .then((response) => {
+            console.log(response);
+            return response.json();
+        })
+        .then((data) => {
+            vidIdTag = data.items[0].id.videoId;
+            embed(vidIdTag)
+            console.log(vidIdTag);
+            console.log(data);
+        })
+        .catch((error) => {
+            console.log(error);
+        })
 }
 
 // Event listener on button click and runs search function
