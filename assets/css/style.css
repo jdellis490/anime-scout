@@ -19,7 +19,6 @@ body {
     line-height: 1.5em;
 }
 
-
 .header {
     color: var(--text-color);
     background-color: var(--light);
@@ -31,8 +30,12 @@ body {
     
 }
 
+.layout {
+    display: flex;
+}
+
 .main-container {
-    width: 90%;
+    width: calc(100% - 496px);
     margin: auto;
     padding-left: 50px;
     padding-right: 50px;
@@ -45,6 +48,17 @@ body {
     justify-content: center;
 }
 
+.list {
+    width: 50%;
+    width: 395px;
+}
+.sub-list {
+    padding: 10px, 10px;
+    border-bottom: 1px solid black;
+    border-left: 6px solid transparent;
+    background-color: var(--medium);
+}
+
 .flex-container {
     display: flex;
     justify-content: center;
@@ -55,13 +69,26 @@ body {
     background-color: var(--light);
     font-size: 15px;
     border: 2px solid black;
-    border-radius: 10px;
+    border-radius: 5px;
     width: 100px;
     height: 35px;
 }
 
 .btn:hover {
     color: white;
+}
+
+#anime-info {
+    text-align: center;
+}
+
+.card {
+    height: 200px;
+    width: 150px;
+    margin: 10px;
+    border-radius: 8px;
+    background-color: var(--light);
+    display: block;
 }
 
 footer {

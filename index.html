@@ -8,39 +8,47 @@
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
-      <header class="header">
-        <h1 class="title">Anime Scout</h1>
-      </header>
-   <!-- Main search container-->
-    <div class="main-container">
-        <div class="search-container">
-      <form type="submit">
-        <input
-          name="Search"
-          id="searchBar"
-          type="text"
-          size="40"
-          autofocus="true"
-          class="form-input"
-          placeholder="Search for an Anime!"
-        />
-        <button type="submit" class="btn" id="searchBtn">BANKAI</button>
-      </form>
-      <div id="layout" class="">
-
+    <header class="header">
+      <h1 class="title">Anime Scout</h1>
+    </header>
+    <div class="layout">
+      <div class="layout" class="">
+        <div class="list">
+          <div class="sub-list">
+            <div id="search-results" class="cards">Cards go here..</div>
+          </div>
+        </div>
       </div>
-    </div>
-      <!-- This will display the cards for the anime titles -->
-      <div id="cardDisplayArea"></div>
-      <!-- Container to hold Youtube videos of anime-->
-      <div class="flex-container">
-        <iframe
-          id="vidIframe"
-          width="560"
-          height="315"
-          frameborder="0"
-          allowfullscreen
-        ></iframe>
+      <!-- Main search container-->
+      <div class="main-container">
+        <div class="search-container">
+          <form type="submit">
+            <input
+              name="Search"
+              id="search-bar"
+              type="text"
+              size="40"
+              autofocus="true"
+              class="form-input"
+              placeholder="Search for an Anime!"
+            />
+            <button type="submit" class="btn" id="search-btn">BANKAI</button>
+          </form>
+        </div>
+        <!-- This will display the cards for the anime titles -->
+        <div id="anime-info">
+          <div class="card">This is where the anime info will go.</div>
+        </div>
+        <!-- Container to hold Youtube videos of anime-->
+        <div class="flex-container">
+          <iframe
+            id="vidIframe"
+            width="560"
+            height="315"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+        </div>
       </div>
     </div>
     <footer>Copyright</footer>
