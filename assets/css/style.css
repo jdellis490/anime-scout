@@ -19,6 +19,32 @@ body {
     line-height: 1.5em;
 }
 
+h1 {
+    color: var(--dark);
+    background-color: var(--bg-color);
+}
+
+h2 {
+    color: var(--dark);
+    background-color: var(--bg-color);
+}
+
+h6 {
+    color: var(--light);
+    font-size: 20px;
+    background-color: var(--bg-color);
+}
+span {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: var(--medium);
+}
+
 .header {
     color: var(--text-color);
     background-color: var(--light);
@@ -36,7 +62,6 @@ body {
 
 .main-container {
     width: calc(100% - 496px);
-    margin: auto;
     padding-left: 50px;
     padding-right: 50px;
     border: 2px solid black;
@@ -46,6 +71,12 @@ body {
     width: 100%;
     display: flex;
     justify-content: center;
+}
+
+.search {
+    display: grid;
+    grid-template-columns: auto 50px;
+    width: 50%;
 }
 
 .list {
@@ -62,6 +93,7 @@ body {
 .flex-container {
     display: flex;
     justify-content: center;
+
 }
 
 .btn {
@@ -82,13 +114,44 @@ body {
     text-align: center;
 }
 
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .card {
-    height: 200px;
+    height: 230px;
     width: 150px;
     margin: 10px;
     border-radius: 8px;
     background-color: var(--light);
+    overflow: hidden;
     display: block;
+}
+
+.card-image img {
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.card-image {
+    height: 190px;
+    width: 100%;
+}
+
+.card-name {
+    height: 40px;
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    color: var(--dark);
+    font-weight: 700;
 }
 
 footer {
