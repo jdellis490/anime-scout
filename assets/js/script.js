@@ -81,7 +81,11 @@ displayAnimeDetails = (anime) => {
   if (animeScore && animeSynopsis != null) {
     document.getElementById("anime-info").innerHTML = `<div>
             <h2>${anime.title}</h2>
+            <br>
+            <br>
             <h6>${anime.synopsis}</h6>
+            <br>
+            <br>
             <div>
                 <h2>Score: ${anime.score} /10</h2>
             </div>
