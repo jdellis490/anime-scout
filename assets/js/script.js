@@ -87,7 +87,7 @@ displayAnimeDetails = (anime) => {
             <br>
             <br>
             <div>
-                <h2>Score: ${anime.score} /10</h2>
+                <h2>Score: ${anime.score} / 10</h2>
             </div>
         </div>`;
   } else {

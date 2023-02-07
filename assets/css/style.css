@@ -104,6 +104,8 @@ form .form-input {
     background-color: var(--medium);
 }
 .anime-details {
+    margin: auto;
+    padding: 10px;
     background-color: var(--medium);
     border: 1px solid var(--light);
     border-radius: 5px;
