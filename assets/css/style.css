@@ -20,6 +20,10 @@ body {
     background: var(--dark);
     line-height: 1.5em;
 }
+h1 {
+    text-align: center;
+    line-height: 1em;
+}
 
 .h2-header{
     color: var(--bg-color);
@@ -61,40 +65,41 @@ form .form-input {
 }
 
 .header {
+    width: 100%;
     text-align: center;
     font-size: 40px;
     padding: 40px;
-    margin: auto;
+    margin: 0;
     color: var(--bg-color);
     background: linear-gradient(0.25turn, var(--light), var(--medium), var(--dark));
-    border-bottom: 2px solid black;
-    
+    border-bottom: 5px solid var(--bg-color);
+
 }
 
 .layout {
     display: flex;
+    
 }
 
 .main-container {
     display: block;
     width: 100%;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding: 0 50px;
+    
 }
 
 .search-container {
-    width: 95%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     text-align: center;
     justify-content: center;
     background-color: var(--dark);
-    padding: 26px;
+    padding: 26px 0;
 }
 
 .list {
-    width: 50%;
     width: 395px;
 }
 .sub-list {
@@ -109,6 +114,7 @@ form .form-input {
     background-color: var(--medium);
     border: 1px solid var(--light);
     border-radius: 5px;
+    display: block;
 }
 
 .flex-container {
@@ -145,6 +151,7 @@ form .form-input {
 .cards {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .card {
@@ -192,4 +199,26 @@ footer {
     font-size: 20px;
     width: 100%;
     padding: 15px;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 767px) {
+    .header {
+        text-align: center;
+    }
+    .layout {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+
+    .main-container, .search-container {
+        width: 95%;
+    }
+
+    .list, .anime-details{
+        width: auto;
+    }
+    
 }
