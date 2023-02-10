@@ -1,228 +1,234 @@
-* { 
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
 
 /* Color Palette */
 
 :root {
-    --bg-color: #DDDDDD;
-    --text-color:black;
-    --light: #F05454;
-    --medium: #30475E;
-    --dark: #222831;
+  --bg-color: #dddddd;
+  --text-color: black;
+  --light: #f05454;
+  --medium: #30475e;
+  --dark: #222831;
 }
 html {
-    background: var(--dark);
+  background: var(--dark);
 }
 body {
-    font-size: 17px;
-    background: var(--dark);
-    line-height: 1.5em;
+  font-size: 17px;
+  background: var(--dark);
+  line-height: 1.5em;
 }
 h1 {
-    text-align: center;
-    line-height: 1em;
+  text-align: center;
+  line-height: 1em;
 }
 
-.h2-header{
-    color: var(--bg-color);
+.h2-header {
+  color: var(--bg-color);
 }
 h2 {
-    color: var(--light);
+  color: var(--light);
 }
 
 h6 {
-    color: var(--bg-color);
-    font-size: 20px;
+  color: var(--bg-color);
+  font-size: 20px;
 }
 span {
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 a {
-    text-decoration: none;
-    color: var(--light);
+  text-decoration: none;
+  color: var(--light);
 }
 
 form {
-    width: 100%;
+  width: 100%;
 }
 
 form .form-input {
-    width: 100%;
-    padding: 12px;
-    color: #1a1a1a;
-    background-color: #ffffff;
-    margin: 10px 0;
-    font-size: 20px;
-    border: 1px solid #484848;
-    border-radius: 5px;
-    box-sizing: border-box;
-
+  width: 100%;
+  padding: 12px;
+  color: #1a1a1a;
+  background-color: #ffffff;
+  margin: 10px 0;
+  font-size: 20px;
+  border: 1px solid #484848;
+  border-radius: 5px;
+  box-sizing: border-box;
 }
 
 .header {
-    width: 100%;
-    text-align: center;
-    font-size: 40px;
-    padding: 40px;
-    margin: 0;
-    color: var(--bg-color);
-    background: linear-gradient(0.25turn, var(--light), var(--medium), var(--dark));
-    border-bottom: 5px solid var(--bg-color);
-
+  width: 100%;
+  text-align: center;
+  font-size: 40px;
+  padding: 40px;
+  margin: 0;
+  color: var(--bg-color);
+  background: linear-gradient(
+    0.25turn,
+    var(--light),
+    var(--medium),
+    var(--dark)
+  );
+  border-bottom: 5px solid var(--bg-color);
 }
 
 .layout {
-    display: flex;
-    
+  display: flex;
 }
 
 .main-container {
-    display: block;
-    width: 100%;
-    padding: 0 50px;
-    
+  display: block;
+  width: 100%;
+  padding: 0 50px;
 }
 
 .search-container {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    text-align: center;
-    justify-content: center;
-    background-color: var(--dark);
-    padding: 26px 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+  background-color: var(--dark);
+  padding: 26px 0;
 }
 
 .list {
-    width: 395px;
+  width: 395px;
 }
 .sub-list {
-    padding: 10px, 10px;
-    border-bottom: 1px solid black;
-    border-left: 6px solid transparent;
-    background-color: var(--medium);
+  padding: 10px, 10px;
+  border-bottom: 1px solid var(--light);
+  border-left: 6px solid transparent;
+  background-color: var(--medium);
 }
 .anime-details {
-    margin: auto;
-    padding: 10px;
-    background-color: var(--medium);
-    border: 1px solid var(--light);
-    border-radius: 5px;
-    display: block;
+  margin: auto;
+  padding: 10px;
+  background-color: var(--medium);
+  border: 1px solid var(--light);
+  border-radius: 5px;
+  display: block;
 }
 
 .flex-container {
-    display: flex;
-    justify-content: center;
-
+  display: flex;
+  justify-content: center;
+  margin: 50px 0;
 }
 
 .btn {
-    text-align: center;
-    display: inline-block;
-    padding: 8px 19px;
-    margin: 0;
-    text-decoration: none;
-    font-size: 20px;
-    border-radius: 5px;
-    border: 1px solid var(--light);
-    outline: none;
-    color: white;
-    background-color: var(--dark);
-    transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
-    width: 100%; 
+  text-align: center;
+  display: inline-block;
+  padding: 8px 19px;
+  margin: 0;
+  text-decoration: none;
+  font-size: 20px;
+  border-radius: 5px;
+  border: 1px solid var(--light);
+  outline: none;
+  color: white;
+  background-color: var(--dark);
+  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+  width: 100%;
 }
 
 .btn:hover {
-    box-shadow: 0 0 10px 0 var(--light) inset, 0 0 10px 4px var(--light);
-    background-color: var(--light);
-    cursor: pointer;
+  box-shadow: 0 0 10px 0 var(--light) inset, 0 0 10px 4px var(--light);
+  background-color: var(--light);
+  cursor: pointer;
 }
 
 #anime-info {
-    text-align: center;
+  text-align: center;
 }
 
 .cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .card {
-    height: 230px;
-    width: 150px;
-    margin: 10px;
-    border-radius: 8px;
-    background-color: var(--light);
-    overflow: hidden;
-    display: block;
+  height: 230px;
+  width: 150px;
+  margin: 10px;
+  border-radius: 8px;
+  background-color: var(--light);
+  overflow: hidden;
+  display: block;
 }
 
 .card-image img {
-    height: 100%;
-    width: 100%;
-    -o-object-fit: cover;
-    object-fit: cover;
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
 }
 
 .card-image {
-    height: 190px;
-    width: 100%;
+  height: 190px;
+  width: 100%;
 }
 
 .card-name {
-    height: 40px;
-    width: 100%;
-    padding: 0 20px;
-    box-sizing: border-box;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 14px;
-    color: var(--dark);
-    font-weight: 700;
+  height: 40px;
+  width: 100%;
+  padding: 0 20px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  color: var(--dark);
+  font-weight: 700;
 }
 
 footer {
-    display: flex;
-    position: sticky;
-    margin-top: 56px;
-    border-top: 1px solid black;
-    background: linear-gradient(0.25turn, var(--light), var(--medium), var(--dark));
-    color: var(--bg-color);
-    font-size: 20px;
-    width: 100%;
-    padding: 15px;
+  display: flex;
+  position: sticky;
+  margin-top: 56px;
+  border-top: 1px solid black;
+  background: linear-gradient(
+    0.25turn,
+    var(--light),
+    var(--medium),
+    var(--dark)
+  );
+  color: var(--bg-color);
+  font-size: 20px;
+  width: 100%;
+  padding: 15px;
 }
 
 /* Media Queries */
 
 @media screen and (max-width: 767px) {
-    .header {
-        text-align: center;
-    }
-    .layout {
-        display: flex;
-        flex-direction: column-reverse;
-        justify-content: center;
-    }
+  .header {
+    text-align: center;
+  }
+  .layout {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
 
-    .main-container, .search-container {
-        width: 100%;
-        justify-content: center;
-    }
+  .main-container,
+  .search-container {
+    width: 100%;
+    justify-content: center;
+  }
 
-    .list {
-        width: auto;
-        display: flex;
-        flex-wrap: wrap;
-    }
-    
+  .list {
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
 }

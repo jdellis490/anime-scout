@@ -1,6 +1,6 @@
 const searchForm = document.querySelector("#search-bar");
 const buttonEl = document.querySelector("#search-btn");
-const tokenK = "AIzaSyBOmO9O2FstPY2qYc1OT5fBE7h0GK1yz4Q"; // Restrict when deployed
+const tokenK = "AIzaSyBOmO9O2FstPY2qYc1OT5fBE7h0GK1yz4Q"; 
 let vidIdTag;
 
 searchSubmission = (e) => {
@@ -13,14 +13,9 @@ searchSubmission = (e) => {
     return;
   }
   // Functions that call both API fetches to return data
-  // onSearch(inputSearchEl);
+  onSearch(inputSearchEl);
   onAnimeSearch(inputSearchEl);
 };
-
-// fetch('https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=10&q=anime%20trailer&key=AIzaSyBOmO9O2FstPY2qYc1OT5fBE7h0GK1yz4Q')
-// .then((data) => {
-//     console.log(data.json())
-// });
 
 // Youtube API fetch for videos
 onSearch = (searchValue) => {
@@ -50,12 +45,6 @@ let embed = (vidIdTag) => {
   const embedLink = "https://www.youtube.com/embed/" + vidIdTag;
   document.getElementById("vidIframe").src = embedLink;
 };
-
-// Jikan API fetch for anime
-// fetch('https://api.jikan.moe/v4/anime')
-// .then((response) => {
-//     console.log(response.json());
-// });
 
 onAnimeSearch = (searchValue) => {
   let requestURL = "https://api.jikan.moe/v4/anime?q=" + searchValue;
