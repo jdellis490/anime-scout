@@ -142,6 +142,7 @@ form .form-input {
 .btn:hover {
     box-shadow: 0 0 10px 0 var(--light) inset, 0 0 10px 4px var(--light);
     background-color: var(--light);
+    cursor: pointer;
 }
 
 #anime-info {
@@ -214,11 +215,14 @@ footer {
     }
 
     .main-container, .search-container {
-        width: 95%;
+        width: 100%;
+        justify-content: center;
     }
 
-    .list, .anime-details{
+    .list {
         width: auto;
+        display: flex;
+        flex-wrap: wrap;
     }
     
 }
