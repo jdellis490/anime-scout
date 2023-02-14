@@ -21,6 +21,7 @@ body {
   line-height: 1.5em;
 }
 h1 {
+  font-family: 'Philosopher', sans-serif;
   text-align: center;
   line-height: 1em;
 }
@@ -29,10 +30,13 @@ h1 {
   color: var(--bg-color);
 }
 h2 {
+  font-family: 'Philosopher', sans-serif;
+  font-size: 30px;
   color: var(--light);
 }
 
 h6 {
+  font-family: 'Philosopher', sans-serif;
   color: var(--bg-color);
   font-size: 20px;
 }
