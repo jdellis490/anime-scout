@@ -12,7 +12,7 @@ searchSubmission = (e) => {
     alert("Please enter Anime title!");
     return;
   }
-  // Functions that call both API fetches to return data
+  // Functions that call both API fetches to return search data
   onSearch(inputSearchEl);
   onAnimeSearch(inputSearchEl);
 };
